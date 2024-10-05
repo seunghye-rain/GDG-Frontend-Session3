@@ -3,9 +3,12 @@ import logo from "./logo.png";
 
 export default function Home() {
   return (
-    <div className="flex flex-col justify-center items-center bg-gradient-to-t from-black via-red-950 to-black w-full h-full font-custom">
+    <div className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-t from-black via-red-950 to-black w-full font-custom relative">
       {/* 상단 로고와 로그인 버튼 */}
-      <div className="flex flex-row justify-between items-center w-full p-8">
+      <div
+        className="absolute top-0 left-0 w-full flex justify-between items-center p-8"
+        style={{ paddingLeft: "10%", paddingRight: "10%" }}
+      >
         <div className="flex">
           <Image src={logo} alt="Netflix Logo" className="w-[148px] h-[50px]" />
         </div>
@@ -26,7 +29,7 @@ export default function Home() {
             영화, 시리즈 등을 <br />
             무제한으로
           </h1>
-          <p className="text-lg font-normal text-white mt-3 mb-6">
+          <p className="text-lg font-semibold text-white mt-3 mb-6">
             5,500원으로 시작하세요. 멤버십은 언제든지 해지 가능합니다.
           </p>
         </div>
@@ -42,12 +45,12 @@ export default function Home() {
             <input
               type="email"
               placeholder="이메일 주소"
-              className="w-full p-4 bg-gray-600 bg-opacity-20 border-2 border-white text-sm text-white font-thin rounded-l-md focus:outline-none"
+              className="w-full p-4 bg-gray-600 bg-opacity-20 border-opacity-50 border-2 border-white text-sm text-white font-thin rounded-md focus:outline-none mr-2"
             />
             {/* 시작하기 버튼 */}
             <a
               role="button"
-              className="p-4 bg-red-600 text-lg text-white font-medium rounded-r-md border-red-600"
+              className="p-4 bg-red-600 text-sm text-white font-medium rounded-md whitespace-nowrap border-red-600"
             >
               시작하기
             </a>

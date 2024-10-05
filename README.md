@@ -1,1 +1,1 @@
-![Netflix Clone Screenshot](./public/images/screenshot.png)
+![Netflix Clone Screenshot](./public/images/화면.png)
